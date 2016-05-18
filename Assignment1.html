@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<style type="text/css" rel="stylesheet">
+		body {
+			width: 100%;
+			position: absolute;
+			left: 250px;
+			right: 250px;
+
+		}
+		div#register {
+			width: 320px;
+			height: 250px;
+			position: absolute;
+			top: 120px;
+			left: 25px;
+			padding: 5px 10px;
+		}
+
+		div#login {
+			background-color: #663399;
+			width: 320px;
+			height: 250px;
+			padding: 5px 10px;
+			position: absolute;
+			top: 120px;
+			left: 400px;
+		}
+		div#info {
+			margin: 20px;
+		}
+		div#register p input {
+			border-color: red;
+			padding: 3px;
+		}
+		div#login p input {
+			padding: 3px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="info">
+			<h2 style="color:#663399">Enter the system</h2>
+			<p style="color:grey">It is necessary to login into your account in order to sign up for a course.</p>
+		</div>
+		<div id="register">
+			<p><span style="color:grey">ARE YOU NEW?<span><span style="color:#663399;"> REGISTER<span></p>
+			<form action="" method="get">
+				<p><input type="text" name="username" placeholder="User name" size="40" required></p>
+				<p><input type="email" name="email" placeholder="Email" size="40" required></p>
+				<p><input type="password" name="password" placeholder="Password" size="40" required></p>
+				<p><input type="password" name="confirmpassword" placeholder="Confirm Password" size="40" required></p>
+				<p><input type="submit" value="REGISTER" style="color:blue;width:100px;position:absolute;left:228px;border-color:blue;"></p>
+			</form>
+		</div>
+		<div id="login">
+			<p style="color:white;">ALREADY A STUDENT? LOGIN</p>
+			<form action="" method="get">
+				<p><input type="text" name="username" placeholder="User name" size="40" required></p>
+				<p><input type="password" name="password" placeholder="Password" size="40" required></p>
+				<p><span style="color:white;"><input type="checkbox" name="rememberme" required>Remember me?</span><input type="submit" value="LOGIN" style="color:blue;width:100px;position:absolute;left:228px;border-color:yellow;"></p>
+				<p><a href="" style="color:white;width:150px;position:absolute;left:215px;">Forgot password?</a></p>
+			</form>
+		</div>
+	</body>
+</html>
